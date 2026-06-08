@@ -1,16 +1,17 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
 export default defineConfig({
   plugins: [
-    tanstackStart({
-      server: { entry: "server" },
-    }),
-    tailwindcss(),
-    react(),
+    tanstackStart(),
     tsconfigPaths(),
   ],
+  // Vinxi'ye doğrudan üst katmandan cloudflare-pages preset'ini dikte ediyoruz
+  // @ts-ignore
+  app: {
+    server: {
+      preset: "cloudflare-pages"
+    }
+  }
 });
