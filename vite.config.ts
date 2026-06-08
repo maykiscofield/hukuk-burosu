@@ -9,7 +9,7 @@ export default defineConfig({
     tanstackStart({
       server: { entry: "server" },
     }),
-    tailwindcss(), // <-- Tailwind motorunu buraya bağladık
+    tailwindcss(),
     react(),
     tsconfigPaths(),
   ],
