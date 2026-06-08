@@ -1,3 +1,16 @@
 {
-  "framework": "tanstack-start"
+  "version": 2,
+  "framework": "tanstack-start",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@tanstack/react-start/vercel"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
