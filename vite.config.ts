@@ -7,7 +7,6 @@ export default defineConfig({
     tanstackStart(),
     tsconfigPaths(),
   ],
-  // Vinxi'ye doğrudan üst katmandan cloudflare-pages preset'ini dikte ediyoruz
   // @ts-ignore
   app: {
     server: {
