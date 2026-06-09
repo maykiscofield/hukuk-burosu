@@ -4,11 +4,9 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
 export default defineConfig({
   plugins: [
-    tanstackStart(),
+    tanstackStart({
+      target: "cloudflare-pages",
+    }),
     tsconfigPaths(),
   ],
-  server: {
-    // @ts-ignore
-    preset: "cloudflare-pages"
-  }
 });
