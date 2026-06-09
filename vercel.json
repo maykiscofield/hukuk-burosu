@@ -1,7 +1,7 @@
 {
   "functions": {
     "dist/server/server.js": {
-      "runtime": "@vercel/node@5"
+      "runtime": "nodejs22.x"
     }
   },
   "routes": [
