@@ -7,10 +7,8 @@ export default defineConfig({
     tanstackStart(),
     tsconfigPaths(),
   ],
-  // @ts-ignore
-  app: {
-    server: {
-      preset: "cloudflare-pages"
-    }
+  server: {
+    // @ts-ignore
+    preset: "cloudflare-pages"
   }
 });
