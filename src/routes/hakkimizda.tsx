@@ -147,7 +147,7 @@ function About() {
     <img
       src="/cuneyt-photo.webp"
       alt="Av. Cüneyt Kocamanoğlu portresi"
-      className="aspect-[3/4] w-full object-cover grayscale"
+      className="aspect-[3/4] w-full object-cover"
       loading="lazy"
     />
   </div>
