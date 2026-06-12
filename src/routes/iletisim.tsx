@@ -67,7 +67,8 @@ function Contact() {
           
             </InfoRow>
             <InfoRow icon={Clock} title="Çalışma Saatleri">
-              Hergün · 09:00 — 21:00<br /> 
+              Haftanın Her günü <br />
+              · 09:00 — 21:00<br /> 
             </InfoRow>
           </div>
 
