@@ -59,11 +59,12 @@ function Contact() {
               Küçükçekmece / İstanbul
             </InfoRow>
             <InfoRow icon={Phone} title="Telefon">
-              +90 500 00 00<br />
-              +90 532 000 00 00
+              +90 544 656 2757<br />
             </InfoRow>
             <InfoRow icon={Mail} title="E-posta">
-              avcuneytkocamanoglu@istanbulbarosu.org.tr
+              avcuneytkocamanoglu@istanbulbarosu.org.tr<br />
+              avcuneytiletisim@gmail.com
+          
             </InfoRow>
             <InfoRow icon={Clock} title="Çalışma Saatleri">
               Hergün · 09:00 — 21:00<br /> 

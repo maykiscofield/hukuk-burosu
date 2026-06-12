@@ -89,18 +89,18 @@ function HomePage() {
             {/* Eyebrow */}
             <div className="mb-7 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[color:var(--gold-soft)]">
               <span className="h-px w-10 bg-[color:var(--gold)]" />
-              Hukuk Bürosu — İstanbul, Est. 2017
+              Hukuk Bürosu — İstanbul
             </div>
 
             {/* Headline — clear value prop */}
             <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">
-              İstanbul'un güvenilir<br />
-              <span className="italic text-[color:var(--gold-soft)]">hukuk danışmanı.</span>
+              Avukat Cüneyt Kocamanoğlu<br />
+              <span className="italic text-[color:var(--gold-soft)]">Hukuk & Danışmanlık</span>
             </h1>
 
             <p className="mt-7 max-w-xl text-[15px] leading-relaxed text-primary-foreground/70 sm:text-base">
               Ticaret ve ceza hukukunun en zorlu davalarında; stratejik savunma,
-              sonuç odaklı danışmanlık. 8 yılı aşkın deneyim, onlarca emsal kararla.
+              sonuç odaklı danışmanlık. 9 yılı aşkın deneyim, onlarca emsal kararla.
             </p>
 
             {/* CTAs */}
@@ -139,9 +139,8 @@ function HomePage() {
         <div className="relative z-10 border-t border-white/10">
           <div className="container-prose grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
             {[
-              { value: "8+",   label: "Yıllık Deneyim" },
+              { value: "9+",   label: "Yıllık Deneyim" },
               { value: "100+", label: "Başarıyla Sonuçlanan Dava" },
-              { value: "2017", label: "Kuruluş Yılı" },
               { value: "4",    label: "Temel Uzmanlık Alanı" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-6 md:py-7">
@@ -237,7 +236,7 @@ function HomePage() {
               {
                 n: "03",
                 t: "Emsal Kararlar",
-                d: "8 yılı aşkın pratikte elde ettiğimiz içtihat birikimi ve emsal kararlar, savunma stratejimizin temelini oluşturur.",
+                d: "9 yılı aşkın pratikte elde ettiğimiz içtihat birikimi ve emsal kararlar, savunma stratejimizin temelini oluşturur.",
               },
             ].map((it) => (
               <div key={it.n} className="relative pl-6 border-l-2 border-[color:var(--gold)]">

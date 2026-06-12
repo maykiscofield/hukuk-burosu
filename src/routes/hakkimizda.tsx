@@ -197,7 +197,7 @@ function About() {
               {/* Achievement highlights */}
               <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3">
                 {[
-                  { value: "8+",    label: "Yıl Deneyim" },
+                  { value: "9+",    label: "Yıl Deneyim" },
                   { value: "100+",  label: "Kapatılan Dava" },
                   { value: "İki",   label: "Uzmanlık Alanı" },
                 ].map((item) => (

@@ -30,8 +30,9 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/75">
             <li>Kartaltepe Mah. 1.Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36 </li>
             <li>Küçükçekmece / İstanbul</li>
-            <li>+90 500 000 0000</li>
+            <li>+90 544 656 2757</li>
             <li>avcuneytkocamanoglu@istanbulbarosu.org.tr</li>
+            <li>avcuneytiletisim@gmail.com</li>
           </ul>
         </div>
       </div>
