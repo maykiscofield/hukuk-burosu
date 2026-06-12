@@ -140,18 +140,17 @@ function About() {
           <div className="mt-4 h-px w-12 bg-[color:var(--gold)]" />
 
           <div className="mt-14 grid gap-12 md:grid-cols-[300px_1fr] md:items-start">
-            {/* Portrait */}
-            <div>
-              <div className="relative">
-                <div className="absolute -inset-2 -z-10 border border-[color:var(--gold)]/40" />
-                <img
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=80"
-                  alt="Av. Cüneyt Kocamanoğlu portresi"
-                  className="aspect-[3/4] w-full object-cover grayscale"
-                  loading="lazy"
-                />
-              </div>
-
+           {/* Portrait */}
+<div>
+  <div className="relative">
+    <div className="absolute -inset-2 -z-10 border border-[color:var(--gold)]/40" />
+    <img
+      src="/cuneyt-photo.webp"
+      alt="Av. Cüneyt Kocamanoğlu portresi"
+      className="aspect-[3/4] w-full object-cover grayscale"
+      loading="lazy"
+    />
+  </div>
               {/* Credential badges under photo */}
               <div className="mt-4 space-y-2">
                 {[
@@ -181,33 +180,17 @@ function About() {
 
               <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-foreground/80">
                 <p>
-                  Eğitim hayatını İstanbul Üniversitesi bünyesinde şekillendiren Av.
-                  Cüneyt Kocamanoğlu, 2009–2013 yılları arasında Siyasal Bilgiler
-                  alanında lisans eğitimini başarıyla tamamladı.
-                </p>
-                <p>
-                  Ardından aynı üniversitenin Hukuk Fakültesi'nde eğitimine devam
-                  ederek 2013–2017 yılları arasında hukuk derecesini üstün başarıyla,
+                  Eğitim hayatını İstanbul Üniversitesi bünyesinde şekillendiren Cüneyt Kocamanoğlu, İstanbul Üniversitesi Hukuk Fakültesi'ni 2013–2017 yılları arasında üstün başarıyla,
                   <span className="font-medium text-[color:var(--navy-deep)]">
                     {" "}Onur Öğrencisi{" "}
                   </span>
                   olarak tamamladı.
                 </p>
                 <p>
-                  İstanbul Barosu'na katılmasının ardından stratejik ve çözüm odaklı
-                  hukukçu kimliğiyle tanınan Kocamanoğlu; 8 yılı aşkın süredir
-                  özellikle{" "}
-                  <span className="font-medium text-[color:var(--navy-deep)]">
-                    ticaret ve ceza hukukunun
-                  </span>{" "}
-                  en karmaşık ve yüksek profilli dosyalarında müvekkillerini
-                  titizlikle temsil etmekte, çok sayıda emsal karara imza atmaktadır.
+                  İstanbul Barosu'na katılmasının ardından stratejik ve çözüm odaklı hukukçu kimliğiyle tanınan Kocamanoğlu; 9 yılı aşkın süredir özellikle ceza ve medeni hukukunun en karmaşık ve yüksek profilli dosyalarında müvekkillerini titizlikle temsil etmekte, çok sayıda emsal karara imza atmaktadır.
                 </p>
                 <p>
-                  Hukuki bilgi birikimini ve derin analiz yeteneğini, müvekkillerine
-                  pratik ve etkin hukuki çözümler sunmak için kullanan Kocamanoğlu,
-                  her davayı özgün koşulları içinde ele alarak sonuç odaklı
-                  stratejiler geliştirmektedir.
+                  Hukuki bilgi birikimini ve derin analiz yeteneğini, müvekkillerine pratik ve etkin hukuki çözümler sunmak için kullanan Kocamanoğlu, her davayı özgün koşulları içinde ele alarak sonuç odaklı stratejiler geliştirmektedir.
                 </p>
               </div>
 
