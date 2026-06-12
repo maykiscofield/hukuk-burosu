@@ -55,7 +55,7 @@ function Contact() {
           {/* Info */}
           <div className="space-y-10">
             <InfoRow icon={MapPin} title="Ofis Adresi">
-              Kartaltepe Mah. 1.Malazgirt Cad. No:2-4/1  B Blok 36 Keleş Center<br />
+              Kartaltepe Mah. 1.Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36 <br />
               Küçükçekmece / İstanbul
             </InfoRow>
             <InfoRow icon={Phone} title="Telefon">
@@ -66,7 +66,7 @@ function Contact() {
               avcuneytkocamanoglu@istanbulbarosu.org.tr
             </InfoRow>
             <InfoRow icon={Clock} title="Çalışma Saatleri">
-              Pazartesi — Cuma · 09:00 — 18:30<br /> 
+              Hergün · 09:00 — 21:00<br /> 
             </InfoRow>
           </div>
 

@@ -4,7 +4,7 @@ import { ArrowRight, Scale, ShieldCheck, Gavel, Building2, CheckCircle2 } from "
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cüneyt Kocamanoğlu Hukuk Bürosu — Kurumsal Hukuk Danışmanlığı" },
+      { title: "Avukat Cüneyt Kocamanoğlu Hukuk & Danışmanlık" },
       {
         name: "description",
         content:
@@ -109,7 +109,7 @@ function HomePage() {
                 to="/iletisim"
                 className="group inline-flex items-center gap-3 bg-[color:var(--gold)] px-8 py-4 text-[12px] uppercase tracking-[0.25em] text-[color:var(--navy-deep)] transition-colors hover:bg-[color:var(--gold-soft)]"
               >
-                Ücretsiz Ön Görüşme
+                Ön Görüşme
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link

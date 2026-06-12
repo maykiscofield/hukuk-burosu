@@ -28,7 +28,7 @@ export function SiteFooter() {
         <div>
           <h4 className="font-serif text-lg text-primary-foreground">İletişim</h4>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/75">
-            <li>Kartaltepe Mah. 1.Malazgirt Cad. No:2-4/1  B Blok 36 Keleş Center</li>
+            <li>Kartaltepe Mah. 1.Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36 </li>
             <li>Küçükçekmece / İstanbul</li>
             <li>+90 500 000 0000</li>
             <li>avcuneytkocamanoglu@istanbulbarosu.org.tr</li>

@@ -46,9 +46,8 @@ function About() {
           {/* Stats bar */}
           <div className="mt-14 grid grid-cols-3 gap-0 divide-x divide-white/10 border border-white/10 md:max-w-xl">
             {[
-              { value: "8+", label: "Yıllık Deneyim" },
-              { value: "2017", label: "Kuruluş Yılı" },
-              { value: "İBB", label: "İstanbul Barosu" },
+              { value: "9+", label: "Yıllık Deneyim" },
+              { value: "TBB", label: "Türkiye Barolar Birliği" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-5">
                 <div className="font-serif text-2xl text-[color:var(--gold)]">
