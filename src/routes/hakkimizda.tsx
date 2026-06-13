@@ -34,8 +34,8 @@ function About() {
           </div>
 
           <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.15] text-white sm:text-5xl md:text-6xl">
-            Yılların getirdiği <br className="hidden sm:block" />
-            derin hukuki birikim.
+            Yılların Getirdiği <br className="hidden sm:block" />
+            Derin Hukuki Birikim
           </h1>
 
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
@@ -48,6 +48,7 @@ function About() {
             {[
               { value: "9+", label: "Yıllık Deneyim" },
               { value: "TBB", label: "Türkiye Barolar Birliği" },
+              { value: "Baro", label: "İstanbul Barosu" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-5">
                 <div className="font-serif text-2xl text-[color:var(--gold)]">
@@ -199,7 +200,7 @@ function About() {
                 {[
                   { value: "9+",    label: "Yıl Deneyim" },
                   { value: "100+",  label: "Kapatılan Dava" },
-                  { value: "İki",   label: "Uzmanlık Alanı" },
+                  { value: "7+",   label: "Uzmanlık Alanı" },
                 ].map((item) => (
                   <div
                     key={item.label}
