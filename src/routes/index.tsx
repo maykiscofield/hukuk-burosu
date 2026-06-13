@@ -141,7 +141,7 @@ function HomePage() {
             {[
               { value: "9+",   label: "Yıllık Deneyim" },
               { value: "100+", label: "Başarıyla Sonuçlanan Dava" },
-              { value: "7+",    label: "Temel Uzmanlık Alanı" },
+              { value: "7+",   label: "Temel Uzmanlık Alanı" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-6 md:py-7">
                 <div className="font-serif text-2xl text-[color:var(--gold)]">{stat.value}</div>
@@ -226,7 +226,7 @@ function HomePage() {
               {
                 n: "01",
                 t: "Stratejik Yaklaşım",
-                d: "Her dava, yalnızca savunma değil; uzun vadeli sonuç hedeflenerek planlanır. Rakip avukatların görmediği açıları görürüz.",
+                d: "Her dava, yalnızca savunma değil; uzun vadeli sonuç hedeflenerek planlanır.",
               },
               {
                 n: "02",
