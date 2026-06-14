@@ -137,7 +137,7 @@ function HomePage() {
 
         {/* Stats band at bottom of hero */}
         <div className="relative z-10 border-t border-white/10">
-          <div className="container-prose grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
+          <div className="container-prose grid grid-cols-3 divide-x divide-white/10">
             {[
               { value: "9+",   label: "Yıllık Deneyim" },
               { value: "100+", label: "Başarıyla Sonuçlanan Dava" },

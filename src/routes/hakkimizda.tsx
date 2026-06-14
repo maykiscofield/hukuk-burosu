@@ -34,9 +34,8 @@ function About() {
           </div>
 
           <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.15] text-white sm:text-5xl md:text-6xl">
-            Yılların Getirdiği <br className="hidden sm:block" />
-            Derin Hukuki Birikim
-          </h1>
+  Yılların Getirdiği Derin Hukuki Birikim
+</h1>
 
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
             İstanbul merkezli, ticaret ve ceza hukukunda uzmanlaşmış. Stratejik

@@ -95,9 +95,8 @@ function PracticeAreas() {
           </div>
 
           <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.15] text-white sm:text-5xl md:text-6xl">
-            Faaliyet<br className="hidden sm:block" />
-            Alanlarımız
-          </h1>
+  Faaliyet Alanlarımız
+</h1>
 
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
             Cüneyt Kocamanoğlu Hukuk Bürosu; özel hukuk ve kamu hukukunun pek
@@ -106,7 +105,7 @@ function PracticeAreas() {
           </p>
 
           {/* Stats bar */}
-          <div className="mt-14 grid grid-cols-2 gap-0 divide-x divide-white/10 border border-white/10 sm:grid-cols-4 md:max-w-2xl">
+          <div className="mt-14 grid grid-cols-3 gap-0 divide-x divide-white/10 border border-white/10 md:max-w-xl">
             {[
               { value: "7+", label: "Uzmanlık Alanı" },
               { value: "9+", label: "Yıllık Deneyim" },
