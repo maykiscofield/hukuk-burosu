@@ -231,7 +231,7 @@ function HomePage() {
               },
               {
                 n: "02",
-                t: "Direkt İletişim",
+                t: "Doğrudan İletişim",
                 d: "Müvekkiliniz asla kaybedilmiş hissetmez. Dosyanızdaki her gelişmeden anında haberdar edilirsiniz.",
               },
               {
