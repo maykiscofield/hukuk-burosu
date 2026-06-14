@@ -41,7 +41,7 @@ function Contact() {
             İletişim
           </div>
           <h1 className="mt-4 max-w-3xl font-serif text-5xl text-[color:var(--navy-deep)] sm:text-6xl">
-            Ön görüşme talep edin.
+            Ön görüşme talep edin
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
             Tüm görüşmeler avukatlık meslek kurallarına uygun olarak gizlilik

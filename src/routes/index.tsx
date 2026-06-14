@@ -137,11 +137,12 @@ function HomePage() {
 
         {/* Stats band at bottom of hero */}
         <div className="relative z-10 border-t border-white/10">
-          <div className="container-prose grid grid-cols-3 divide-x divide-white/10">
+          <div className="container-prose grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
             {[
               { value: "9+",   label: "Yıllık Deneyim" },
               { value: "100+", label: "Başarıyla Sonuçlanan Dava" },
               { value: "7+",   label: "Temel Uzmanlık Alanı" },
+              { value: "700+", label: "Mutlu Müvekkil" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-6 md:py-7">
                 <div className="font-serif text-2xl text-[color:var(--gold)]">{stat.value}</div>
