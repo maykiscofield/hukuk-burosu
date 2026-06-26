@@ -29,8 +29,10 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="text-sm text-foreground/75 transition-colors hover:text-[color:var(--navy-deep)]"
-              activeProps={{ className: "text-[color:var(--navy-deep)] font-medium" }}
+              className="relative pb-1 text-sm text-foreground/75 transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-[color:var(--gold)] after:content-[''] after:transition-all after:duration-300 hover:text-[color:var(--navy-deep)] hover:after:w-full"
+              activeProps={{
+                className: "text-[color:var(--navy-deep)] font-medium after:w-full",
+              }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
@@ -38,14 +40,16 @@ export function SiteHeader() {
           ))}
           <Link
             to="/iletisim"
-            className="border border-[color:var(--navy)] px-5 py-2 text-xs uppercase tracking-[0.2em] text-[color:var(--navy-deep)] transition-colors hover:bg-[color:var(--navy)] hover:text-primary-foreground"
+            className="bg-[color:var(--gold)] px-5 py-2.5 text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--navy-deep)] transition-colors hover:bg-[color:var(--gold-soft)]"
           >
             Randevu Al
           </Link>
         </nav>
 
         <button
-          aria-label="Menüyü aç"
+          aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
+          aria-expanded={open}
+          aria-controls="mobile-nav"
           className="md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
@@ -54,7 +58,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-background md:hidden">
+        <div id="mobile-nav" className="border-t border-border bg-background md:hidden">
           <div className="container-prose flex flex-col py-4">
             {nav.map((item) => (
               <Link
@@ -71,7 +75,7 @@ export function SiteHeader() {
             <Link
               to="/iletisim"
               onClick={() => setOpen(false)}
-              className="mt-3 border border-[color:var(--navy)] py-3 text-center text-xs uppercase tracking-[0.2em] text-[color:var(--navy-deep)]"
+              className="mt-3 bg-[color:var(--gold)] py-3 text-center text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--navy-deep)] transition-colors hover:bg-[color:var(--gold-soft)]"
             >
               Randevu Al
             </Link>

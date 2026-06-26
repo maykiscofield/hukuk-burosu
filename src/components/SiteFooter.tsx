@@ -1,5 +1,8 @@
 import { Link } from "@tanstack/react-router";
 
+const MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=Kartaltepe+Mah.+1.+Malazgirt+Cad.+No%3A2-4%2F1+Kele%C5%9F+Center+B+Blok+36+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece+%C4%B0stanbul";
+
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border bg-[color:var(--navy-deep)] text-primary-foreground/85">
@@ -28,11 +31,27 @@ export function SiteFooter() {
         <div>
           <h4 className="font-serif text-lg text-primary-foreground">İletişim</h4>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/75">
-            <li>Kartaltepe Mah. 1.Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36 </li>
+            <li>
+              <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[color:var(--gold-soft)]">
+                Kartaltepe Mah. 1. Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36
+              </a>
+            </li>
             <li>Küçükçekmece / İstanbul</li>
-            <li>+90 544 656 2757</li>
-            <li>avcuneytkocamanoglu@istanbulbarosu.org.tr</li>
-            <li>avcuneytiletisim@gmail.com</li>
+            <li>
+              <a href="tel:+905446562757" className="hover:text-[color:var(--gold-soft)]">
+                +90 544 656 2757
+              </a>
+            </li>
+            <li>
+              <a href="mailto:avcuneytkocamanoglu@istanbulbarosu.org.tr" className="hover:text-[color:var(--gold-soft)]">
+                avcuneytkocamanoglu@istanbulbarosu.org.tr
+              </a>
+            </li>
+            <li>
+              <a href="mailto:avcuneytiletisim@gmail.com" className="hover:text-[color:var(--gold-soft)]">
+                avcuneytiletisim@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
       </div>

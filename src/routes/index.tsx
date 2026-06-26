@@ -125,7 +125,7 @@ function HomePage() {
               {trustItems.map((item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-2 text-[12px] text-primary-foreground/45"
+                  className="flex items-center gap-2 text-[12px] text-primary-foreground/65"
                 >
                   <CheckCircle2 className="h-3.5 w-3.5 text-[color:var(--gold)]/60 shrink-0" strokeWidth={2} />
                   {item}
@@ -146,7 +146,7 @@ function HomePage() {
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-6 md:py-7">
                 <div className="font-serif text-2xl text-[color:var(--gold)]">{stat.value}</div>
-                <div className="mt-1 text-[11px] uppercase tracking-[0.18em] text-white/38">
+                <div className="mt-1 text-[11px] uppercase tracking-[0.18em] text-white/60">
                   {stat.label}
                 </div>
               </div>
@@ -156,7 +156,6 @@ function HomePage() {
       </section>
 
       {/* ─── PRACTICE AREAS ───────────────────────────────────────── */}
-      {/* Kopukluğu gidermek için alt padding'i (pb-24'ten pb-12'ye) daralttık */}
       <section className="container-prose pt-24 pb-12">
         <div className="grid gap-14 md:grid-cols-[1fr_2fr]">
           {/* Left: heading */}
@@ -193,7 +192,7 @@ function HomePage() {
                 <h3 className="mt-5 font-sans text-lg font-medium tracking-tight text-[color:var(--navy-deep)] transition-colors duration-300 group-hover:text-white">
                   {title}
                 </h3>
-                <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/60">
+                <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/70">
                   {desc}
                 </p>
                 {/* Tags */}
@@ -209,7 +208,6 @@ function HomePage() {
       </section>
 
       {/* ─── WHY US STRIP ─────────────────────────────────────────── */}
-      {/* Sıkı bir pt-12 vererek kırmızı çizgiyle işaretlediğin noktaya tam olarak yanaşmasını sağladık */}
       <section className="border-t border-b border-border bg-secondary/40">
         <div className="container-prose pt-12 pb-24">
           <div className="mb-14 text-center">

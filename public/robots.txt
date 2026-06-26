@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cuneytkocamanoglu.av.tr/sitemap.xml
