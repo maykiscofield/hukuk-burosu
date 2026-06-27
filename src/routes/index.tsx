@@ -4,12 +4,24 @@ import { ArrowRight, Scale, ShieldCheck, Gavel, Building2, CheckCircle2 } from "
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Avukat Cüneyt Kocamanoğlu Hukuk & Danışmanlık" },
+      { title: "Avukat Cüneyt Kocamanoğlu | İstanbul Hukuk Bürosu" },
       {
         name: "description",
         content:
-          "İstanbul merkezli Cüneyt Kocamanoğlu Hukuk Bürosu; ceza, ticaret, aile ve gayrimenkul hukuku alanlarında prestijli ve güvenilir danışmanlık sunar.",
+          "Avukat Cüneyt Kocamanoğlu — İstanbul Küçükçekmece merkezli hukuk bürosu. Ceza, ticaret, aile ve gayrimenkul hukukunda 9 yılı aşkın deneyim. Ön görüşme için iletişime geçin.",
       },
+      { name: "robots", content: "index, follow" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "tr_TR" },
+      { property: "og:title", content: "Avukat Cüneyt Kocamanoğlu | İstanbul Hukuk Bürosu" },
+      {
+        property: "og:description",
+        content:
+          "Ceza, ticaret, aile ve gayrimenkul hukukunda uzman avukat. İstanbul Barosu kayıtlı. 9+ yıl deneyim, 100+ başarıyla sonuçlanan dava.",
+      },
+      { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { tagName: "link", rel: "canonical", href: "https://cuneytkocamanoglu.av.tr/" },
     ],
   }),
   component: HomePage,
@@ -54,7 +66,6 @@ function HomePage() {
     <>
       {/* ─── HERO ─────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-[color:var(--navy-deep)] text-primary-foreground">
-        {/* Background image */}
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -65,7 +76,6 @@ function HomePage() {
           }}
           aria-hidden
         />
-        {/* Gradient overlay */}
         <div
           className="absolute inset-0"
           style={{
@@ -74,7 +84,6 @@ function HomePage() {
           }}
           aria-hidden
         />
-        {/* Subtle diagonal texture */}
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
           style={{
@@ -86,15 +95,14 @@ function HomePage() {
 
         <div className="container-prose relative z-10 flex min-h-[82vh] flex-col justify-center py-28">
           <div className="max-w-3xl">
-            {/* Eyebrow */}
             <div className="mb-7 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[color:var(--gold-soft)]">
               <span className="h-px w-10 bg-[color:var(--gold)]" />
               Hukuk Bürosu — İstanbul
             </div>
 
-            {/* Headline — clear value prop */}
             <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">
-              Avukat Cüneyt Kocamanoğlu<br />
+              Avukat Cüneyt Kocamanoğlu
+              <br />
               <span className="italic text-[color:var(--gold-soft)]">Hukuk & Danışmanlık</span>
             </h1>
 
@@ -103,7 +111,6 @@ function HomePage() {
               sonuç odaklı danışmanlık. 9 yılı aşkın deneyim, onlarca emsal kararla.
             </p>
 
-            {/* CTAs */}
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 to="/iletisim"
@@ -120,14 +127,16 @@ function HomePage() {
               </Link>
             </div>
 
-            {/* Trust badges */}
             <div className="mt-12 flex flex-wrap gap-x-6 gap-y-2">
               {trustItems.map((item) => (
                 <div
                   key={item}
                   className="flex items-center gap-2 text-[12px] text-primary-foreground/65"
                 >
-                  <CheckCircle2 className="h-3.5 w-3.5 text-[color:var(--gold)]/60 shrink-0" strokeWidth={2} />
+                  <CheckCircle2
+                    className="h-3.5 w-3.5 shrink-0 text-[color:var(--gold)]/60"
+                    strokeWidth={2}
+                  />
                   {item}
                 </div>
               ))}
@@ -135,13 +144,12 @@ function HomePage() {
           </div>
         </div>
 
-        {/* Stats band at bottom of hero */}
         <div className="relative z-10 border-t border-white/10">
           <div className="container-prose grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
             {[
-              { value: "9+",   label: "Yıllık Deneyim" },
+              { value: "9+", label: "Yıllık Deneyim" },
               { value: "100+", label: "Başarıyla Sonuçlanan Dava" },
-              { value: "7+",   label: "Temel Uzmanlık Alanı" },
+              { value: "7+", label: "Temel Uzmanlık Alanı" },
               { value: "700+", label: "Müvekkil" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-6 md:py-7">
@@ -156,15 +164,16 @@ function HomePage() {
       </section>
 
       {/* ─── PRACTICE AREAS ───────────────────────────────────────── */}
-      <section className="container-prose pt-24 pb-12">
+      <section className="container-prose pb-12 pt-24">
         <div className="grid gap-14 md:grid-cols-[1fr_2fr]">
-          {/* Left: heading */}
           <div className="md:pt-2">
             <div className="text-[11px] uppercase tracking-[0.3em] text-[color:var(--gold)]">
               Faaliyet Alanları
             </div>
             <h2 className="mt-4 font-serif text-4xl leading-tight text-[color:var(--navy-deep)]">
-              Uzmanlık<br />alanlarımız
+              Uzmanlık
+              <br />
+              alanlarımız
             </h2>
             <p className="mt-5 max-w-sm text-[14px] leading-relaxed text-muted-foreground">
               Her hukuk dalında derinlemesine bilgi ve uzun yılların verdiği
@@ -172,13 +181,12 @@ function HomePage() {
             </p>
             <Link
               to="/faaliyet-alanlari"
-              className="mt-8 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.25em] text-[color:var(--navy-deep)] hover:text-[color:var(--gold)] transition-colors"
+              className="mt-8 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.25em] text-[color:var(--navy-deep)] transition-colors hover:text-[color:var(--gold)]"
             >
               Tümünü Gör <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
 
-          {/* Right: cards */}
           <div className="grid gap-px bg-border sm:grid-cols-2">
             {highlights.map(({ icon: Icon, title, desc, detail }) => (
               <div
@@ -195,11 +203,9 @@ function HomePage() {
                 <p className="mt-3 text-[13px] leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/70">
                   {desc}
                 </p>
-                {/* Tags */}
-                <div className="mt-5 text-[11px] font-medium tracking-[0.18em] text-[color:var(--navy)]/80 uppercase transition-colors duration-300 group-hover:text-[color:var(--gold)]">
+                <div className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-[color:var(--navy)]/80 transition-colors duration-300 group-hover:text-[color:var(--gold)]">
                   {detail}
                 </div>
-                {/* Arrow reveal on hover */}
                 <ArrowRight className="absolute bottom-7 right-7 h-4 w-4 text-[color:var(--gold)] opacity-0 transition-all duration-300 group-hover:opacity-100" />
               </div>
             ))}
@@ -208,8 +214,8 @@ function HomePage() {
       </section>
 
       {/* ─── WHY US STRIP ─────────────────────────────────────────── */}
-      <section className="border-t border-b border-border bg-secondary/40">
-        <div className="container-prose pt-12 pb-24">
+      <section className="border-b border-t border-border bg-secondary/40">
+        <div className="container-prose pb-24 pt-12">
           <div className="mb-14 text-center">
             <div className="text-[11px] font-semibold uppercase tracking-[0.35em] text-[color:var(--gold)]">
               Neden Biz
@@ -238,14 +244,14 @@ function HomePage() {
                 d: "9 yılı aşkın pratikte elde ettiğimiz içtihat birikimi ve emsal kararlar, savunma stratejimizin temelini oluşturur.",
               },
             ].map((it) => (
-              <div key={it.n} className="relative pl-6 border-l-2 border-[color:var(--gold)]">
+              <div key={it.n} className="relative border-l-2 border-[color:var(--gold)] pl-6">
                 <div className="font-sans text-[12px] font-bold tracking-[0.25em] text-[color:var(--gold)]">
                   {it.n}
                 </div>
                 <h3 className="mt-2 font-serif text-2xl tracking-tight text-[color:var(--navy-deep)]">
                   {it.t}
                 </h3>
-                <p className="mt-3 text-[13.5px] leading-relaxed text-muted-foreground font-normal">
+                <p className="mt-3 text-[13.5px] font-normal leading-relaxed text-muted-foreground">
                   {it.d}
                 </p>
               </div>

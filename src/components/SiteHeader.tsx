@@ -13,13 +13,13 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[rgba(201,168,76,0.5)] bg-gradient-to-r from-[#0A1223] to-[#1a2a4a] backdrop-blur-md">
       <div className="container-prose flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="font-serif text-2xl tracking-tight text-[color:var(--navy-deep)]">
+          <span className="font-serif text-2xl tracking-tight text-white">
             Cüneyt Kocamanoğlu
           </span>
-          <span className="hidden text-[10px] uppercase tracking-[0.3em] text-muted-foreground sm:inline">
+          <span className="hidden text-[10px] uppercase tracking-[0.3em] text-white/40 sm:inline">
             Hukuk Bürosu
           </span>
         </Link>
@@ -29,9 +29,9 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="relative pb-1 text-sm text-foreground/75 transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-[color:var(--gold)] after:content-[''] after:transition-all after:duration-300 hover:text-[color:var(--navy-deep)] hover:after:w-full"
+              className="relative pb-1 text-sm text-white/65 transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 after:bg-[color:var(--gold)] after:content-[''] after:transition-all after:duration-300 hover:text-white hover:after:w-full"
               activeProps={{
-                className: "text-[color:var(--navy-deep)] font-medium after:w-full",
+                className: "text-white font-medium after:w-full",
               }}
               activeOptions={{ exact: item.to === "/" }}
             >
@@ -50,7 +50,7 @@ export function SiteHeader() {
           aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
           aria-expanded={open}
           aria-controls="mobile-nav"
-          className="md:hidden"
+          className="text-white md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -58,15 +58,15 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div id="mobile-nav" className="border-t border-border bg-background md:hidden">
+        <div id="mobile-nav" className="border-t border-[rgba(201,168,76,0.5)] bg-[#0A1223] md:hidden">
           <div className="container-prose flex flex-col py-4">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="py-3 text-sm text-foreground/80"
-                activeProps={{ className: "text-[color:var(--navy-deep)] font-medium" }}
+                className="py-3 text-sm text-white/75"
+                activeProps={{ className: "text-white font-medium" }}
                 activeOptions={{ exact: item.to === "/" }}
               >
                 {item.label}

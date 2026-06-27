@@ -6,12 +6,23 @@ import { Clock, MapPin, Phone, Mail } from "lucide-react";
 export const Route = createFileRoute("/iletisim")({
   head: () => ({
     meta: [
-      { title: "İletişim & Randevu — Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { title: "İletişim & Randevu — Av. Cüneyt Kocamanoğlu | İstanbul" },
       {
         name: "description",
         content:
-          "Ön görüşme ve danışmanlık randevusu için iletişim bilgilerimiz ve randevu talep formu.",
+          "Avukat Cüneyt Kocamanoğlu ile ön görüşme randevusu alın. Küçükçekmece / İstanbul. Tel: +90 544 656 2757. Haftanın her günü 09:00-21:00.",
       },
+      { name: "robots", content: "index, follow" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "tr_TR" },
+      { property: "og:title", content: "İletişim & Randevu — Av. Cüneyt Kocamanoğlu | İstanbul" },
+      {
+        property: "og:description",
+        content: "Ön görüşme randevusu alın. Küçükçekmece / İstanbul. Haftanın her günü 09:00-21:00.",
+      },
+      { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/iletisim" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { tagName: "link", rel: "canonical", href: "https://cuneytkocamanoglu.av.tr/iletisim" },
     ],
   }),
   component: Contact,
@@ -38,7 +49,7 @@ function Contact() {
         description: "En kısa sürede tarafınıza dönüş sağlanacaktır.",
       });
       setForm({ name: "", email: "", phone: "", message: "", consent: false });
-      loading && setLoading(false);
+      setLoading(false);
     }, 500);
   }
 
@@ -53,20 +64,19 @@ function Contact() {
             Ön görüşme talep edin
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Tüm görüşmeler avukatlık meslek kurallarına uygun olarak gizlilik
-            içinde yürütülür.
+            Tüm görüşmeler avukatlık meslek kurallarına uygun olarak gizlilik içinde yürütülür.
           </p>
         </div>
       </section>
 
       <section className="container-prose py-20">
         <div className="grid gap-16 md:grid-cols-[1fr_1.2fr]">
+
           <div className="space-y-10">
             <InfoRow icon={MapPin} title="Ofis Adresi">
               <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-[color:var(--gold)]">
-                Kartaltepe Mah. 1. Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36
-                <br />
-                Küçükçekmece / İstanbul
+                <span className="block">Kartaltepe Mah. 1. Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36</span>
+                <span className="block">Küçükçekmece / İstanbul</span>
               </a>
             </InfoRow>
 
@@ -86,9 +96,8 @@ function Contact() {
             </InfoRow>
 
             <InfoRow icon={Clock} title="Çalışma Saatleri">
-              Haftanın her günü
-              <br />
-              · 09:00 — 21:00
+              <span className="block">Haftanın her günü</span>
+              <span className="block">· 09:00 — 21:00</span>
             </InfoRow>
           </div>
 
@@ -230,11 +239,17 @@ function InfoRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-4 items-start">
-      <Icon className="w-5 h-5 mt-1 shrink-0 text-[color:var(--gold)]" />
+    <div className="flex gap-5">
+      <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-border">
+        <Icon className="h-5 w-5 text-[color:var(--navy)]" strokeWidth={1.25} />
+      </div>
       <div>
-        <h3 className="font-medium text-sm text-[color:var(--navy-deep)] uppercase tracking-wider mb-1">{title}</h3>
-        <div className="text-sm text-muted-foreground leading-relaxed">{children}</div>
+        <div className="text-[11px] uppercase tracking-[0.25em] text-[color:var(--gold)]">
+          {title}
+        </div>
+        <div className="mt-2 text-[15px] leading-relaxed text-foreground/85">
+          {children}
+        </div>
       </div>
     </div>
   );

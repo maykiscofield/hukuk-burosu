@@ -3,12 +3,24 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/hakkimizda")({
   head: () => ({
     meta: [
-      { title: "Hakkımızda — Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { title: "Hakkımızda — Av. Cüneyt Kocamanoğlu | İstanbul Barosu" },
       {
         name: "description",
         content:
-          "2017'den bu yana İstanbul'da hizmet veren Cüneyt Kocamanoğlu Hukuk Bürosu'nun felsefesi, ekibi ve değerleri.",
+          "İstanbul Üniversitesi Hukuk Fakültesi mezunu, İstanbul Barosu üyesi Avukat Cüneyt Kocamanoğlu hakkında bilgi edinin. Gizlilik, dürüstlük ve özen temel ilkelerimizdir.",
       },
+      { name: "robots", content: "index, follow" },
+      { property: "og:type", content: "profile" },
+      { property: "og:locale", content: "tr_TR" },
+      { property: "og:title", content: "Hakkımızda — Av. Cüneyt Kocamanoğlu | İstanbul Barosu" },
+      {
+        property: "og:description",
+        content:
+          "İstanbul Üniversitesi Hukuk Fakültesi mezunu, İstanbul Barosu üyesi Avukat Cüneyt Kocamanoğlu hakkında bilgi edinin.",
+      },
+      { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/hakkimizda" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { tagName: "link", rel: "canonical", href: "https://cuneytkocamanoglu.av.tr/hakkimizda" },
     ],
   }),
   component: About,
@@ -19,7 +31,6 @@ function About() {
     <>
       {/* ─── HERO ─────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden border-b border-border bg-[color:var(--navy-deep)]">
-        {/* Subtle diagonal overlay for depth */}
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.04]"
           style={{
@@ -42,7 +53,6 @@ function About() {
             hukuki danışmanlıktan dava takibine kadar her aşamada yanınızdayız.
           </p>
 
-          {/* Stats bar */}
           <div className="mt-14 grid grid-cols-3 gap-0 divide-x divide-white/10 border border-white/10 md:max-w-xl">
             {[
               { value: "9+", label: "Yıllık Deneyim" },
@@ -50,9 +60,7 @@ function About() {
               { value: "Baro", label: "İstanbul Barosu" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-5">
-                <div className="font-serif text-2xl text-[color:var(--gold)]">
-                  {stat.value}
-                </div>
+                <div className="font-serif text-2xl text-[color:var(--gold)]">{stat.value}</div>
                 <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-white/60">
                   {stat.label}
                 </div>
@@ -65,7 +73,6 @@ function About() {
       {/* ─── FELSEFE ──────────────────────────────────────────────── */}
       <section className="container-prose py-24">
         <div className="grid gap-16 md:grid-cols-2 md:items-center">
-          {/* Image with gold frame */}
           <div className="relative">
             <div className="absolute -inset-3 -z-10 border border-[color:var(--gold)]/40" />
             <img
@@ -106,18 +113,17 @@ function About() {
               </p>
             </div>
 
-            {/* Core values */}
             <div className="mt-10 space-y-3">
               {[
                 { icon: "⚖", label: "Gizlilik", desc: "Müvekkil bilgilerinin mutlak korunması" },
                 { icon: "◈", label: "Dürüstlük", desc: "Şeffaf iletişim ve etik yaklaşım" },
-                { icon: "◉", label: "Özen",      desc: "Her dosyaya bireysel ilgi ve titizlik" },
+                { icon: "◉", label: "Özen", desc: "Her dosyaya bireysel ilgi ve titizlik" },
               ].map((v) => (
                 <div
                   key={v.label}
-                  className="flex items-start gap-4 border-l-2 border-[color:var(--gold)]/30 pl-4 py-1"
+                  className="flex items-start gap-4 border-l-2 border-[color:var(--gold)]/30 py-1 pl-4"
                 >
-                  <span className="mt-0.5 text-[color:var(--gold)] text-sm">{v.icon}</span>
+                  <span className="mt-0.5 text-sm text-[color:var(--gold)]">{v.icon}</span>
                   <div>
                     <div className="text-[13px] font-semibold uppercase tracking-wider text-[color:var(--navy-deep)]">
                       {v.label}
@@ -140,7 +146,6 @@ function About() {
           <div className="mt-4 h-px w-12 bg-[color:var(--gold)]" />
 
           <div className="mt-14 grid gap-12 md:grid-cols-[300px_1fr] md:items-start">
-            {/* Portrait */}
             <div>
               <div className="relative">
                 <div className="absolute -inset-2 -z-10 border border-[color:var(--gold)]/40" />
@@ -151,17 +156,13 @@ function About() {
                   loading="lazy"
                 />
               </div>
-              {/* Credential badges under photo */}
               <div className="mt-4 space-y-2">
                 {[
                   "İstanbul Üniversitesi Hukuk Fakültesi",
                   "İstanbul Barosu Üyesi",
                   "Onur Öğrencisi — 2017",
                 ].map((c) => (
-                  <div
-                    key={c}
-                    className="flex items-center gap-2 text-[12px] text-foreground/60"
-                  >
+                  <div key={c} className="flex items-center gap-2 text-[12px] text-foreground/60">
                     <span className="h-px w-4 bg-[color:var(--gold)]" />
                     {c}
                   </div>
@@ -169,7 +170,6 @@ function About() {
               </div>
             </div>
 
-            {/* Bio */}
             <div>
               <h3 className="font-serif text-3xl text-[color:var(--navy-deep)]">
                 Av. Cüneyt Kocamanoğlu
@@ -180,31 +180,32 @@ function About() {
 
               <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-foreground/80">
                 <p>
-                  Eğitim hayatını İstanbul Üniversitesi bünyesinde şekillendiren Cüneyt Kocamanoğlu, İstanbul Üniversitesi Hukuk Fakültesi'ni 2013–2017 yılları arasında üstün başarıyla,
-                  <span className="font-medium text-[color:var(--navy-deep)]">
-                    {" "}Onur Öğrencisi{" "}
-                  </span>
+                  Eğitim hayatını İstanbul Üniversitesi bünyesinde şekillendiren Cüneyt
+                  Kocamanoğlu, İstanbul Üniversitesi Hukuk Fakültesi'ni 2013–2017 yılları
+                  arasında üstün başarıyla,{" "}
+                  <span className="font-medium text-[color:var(--navy-deep)]">Onur Öğrencisi</span>{" "}
                   olarak tamamladı.
                 </p>
                 <p>
-                  İstanbul Barosu'na katılmasının ardından stratejik ve çözüm odaklı hukukçu kimliğiyle tanınan Kocamanoğlu; 9 yılı aşkın süredir özellikle ceza ve medeni hukukunun en karmaşık ve yüksek profilli dosyalarında müvekkillerini titizlikle temsil etmekte, çok sayıda emsal karara imza atmaktadır.
+                  İstanbul Barosu'na katılmasının ardından stratejik ve çözüm odaklı hukukçu
+                  kimliğiyle tanınan Kocamanoğlu; 9 yılı aşkın süredir özellikle ceza ve medeni
+                  hukukunun en karmaşık ve yüksek profilli dosyalarında müvekkillerini titizlikle
+                  temsil etmekte, çok sayıda emsal karara imza atmaktadır.
                 </p>
                 <p>
-                  Hukuki bilgi birikimini ve derin analiz yeteneğini, müvekkillerine pratik ve etkin hukuki çözümler sunmak için kullanan Kocamanoğlu, her davayı özgün koşulları içinde ele alarak sonuç odaklı stratejiler geliştirmektedir.
+                  Hukuki bilgi birikimini ve derin analiz yeteneğini, müvekkillerine pratik ve
+                  etkin hukuki çözümler sunmak için kullanan Kocamanoğlu, her davayı özgün
+                  koşulları içinde ele alarak sonuç odaklı stratejiler geliştirmektedir.
                 </p>
               </div>
 
-              {/* Achievement highlights */}
               <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3">
                 {[
-                  { value: "9+",    label: "Yıl Deneyim" },
-                  { value: "100+",  label: "Kapatılan Dava" },
-                  { value: "7+",   label: "Uzmanlık Alanı" },
+                  { value: "9+", label: "Yıl Deneyim" },
+                  { value: "100+", label: "Kapatılan Dava" },
+                  { value: "7+", label: "Uzmanlık Alanı" },
                 ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="border border-border bg-background p-4"
-                  >
+                  <div key={item.label} className="border border-border bg-background p-4">
                     <div className="font-serif text-2xl text-[color:var(--navy-deep)]">
                       {item.value}
                     </div>

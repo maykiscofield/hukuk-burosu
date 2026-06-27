@@ -13,11 +13,27 @@ import {
 export const Route = createFileRoute("/faaliyet-alanlari")({
   head: () => ({
     meta: [
-      { title: "Faaliyet Alanları — Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { title: "Faaliyet Alanları — Av. Cüneyt Kocamanoğlu | İstanbul" },
       {
         name: "description",
         content:
-          "Ceza, ticaret, aile, gayrimenkul, iş ve idare hukuku başta olmak üzere uzmanlık alanlarımız.",
+          "Ceza hukuku, ticaret hukuku, aile hukuku, gayrimenkul, iş hukuku, idare hukuku ve miras hukuku alanlarında İstanbul'da uzman avukatlık hizmetleri.",
+      },
+      { name: "robots", content: "index, follow" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "tr_TR" },
+      { property: "og:title", content: "Faaliyet Alanları — Av. Cüneyt Kocamanoğlu | İstanbul" },
+      {
+        property: "og:description",
+        content:
+          "Ceza, ticaret, aile, gayrimenkul, iş, idare ve miras hukuku alanlarında İstanbul'da uzman avukatlık hizmetleri.",
+      },
+      { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/faaliyet-alanlari" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      {
+        tagName: "link",
+        rel: "canonical",
+        href: "https://cuneytkocamanoglu.av.tr/faaliyet-alanlari",
       },
     ],
   }),
@@ -80,7 +96,6 @@ function PracticeAreas() {
     <>
       {/* ─── HERO ─────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden border-b border-border bg-[color:var(--navy-deep)]">
-        {/* Subtle diagonal overlay for depth */}
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.04]"
           style={{
@@ -99,12 +114,10 @@ function PracticeAreas() {
           </h1>
 
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
-            Cüneyt Kocamanoğlu Hukuk Bürosu; özel hukuk ve kamu hukukunun pek
-            çok dalında, müvekkillerine güvenilir ve sonuç odaklı danışmanlık
-            sunar.
+            Cüneyt Kocamanoğlu Hukuk Bürosu; özel hukuk ve kamu hukukunun pek çok
+            dalında, müvekkillerine güvenilir ve sonuç odaklı danışmanlık sunar.
           </p>
 
-          {/* Stats bar */}
           <div className="mt-14 grid grid-cols-3 gap-0 divide-x divide-white/10 border border-white/10 md:max-w-xl">
             {[
               { value: "7+", label: "Uzmanlık Alanı" },
@@ -112,9 +125,7 @@ function PracticeAreas() {
               { value: "100+", label: "Sonuçlanan Dava" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-5">
-                <div className="font-serif text-2xl text-[color:var(--gold)]">
-                  {stat.value}
-                </div>
+                <div className="font-serif text-2xl text-[color:var(--gold)]">{stat.value}</div>
                 <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-white/60">
                   {stat.label}
                 </div>
@@ -139,14 +150,11 @@ function PracticeAreas() {
               <h2 className="mt-5 font-sans text-lg font-medium tracking-tight text-[color:var(--navy-deep)] transition-colors duration-300 group-hover:text-white">
                 {title}
               </h2>
-
               <div className="mt-3 h-px w-10 bg-[color:var(--gold)] transition-all group-hover:w-16" />
-
               <p className="mt-5 text-[13px] leading-relaxed text-muted-foreground transition-colors duration-300 group-hover:text-white/70">
                 {desc}
               </p>
-
-              <div className="mt-5 text-[11px] font-medium tracking-[0.18em] text-[color:var(--navy)]/80 uppercase transition-colors duration-300 group-hover:text-[color:var(--gold)]">
+              <div className="mt-5 text-[11px] font-medium uppercase tracking-[0.18em] text-[color:var(--navy)]/80 transition-colors duration-300 group-hover:text-[color:var(--gold)]">
                 {detail}
               </div>
             </article>
