@@ -55,15 +55,22 @@ function Contact() {
 
   return (
     <>
-      <section className="border-b border-border bg-secondary/40">
-        <div className="container-prose py-20">
-          <div className="text-[11px] uppercase tracking-[0.3em] text-[color:var(--gold)]">
+      <section className="relative overflow-hidden border-b border-border bg-[color:var(--navy-deep)]">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(135deg, #c9a84c 0px, #c9a84c 1px, transparent 1px, transparent 60px)",
+          }}
+        />
+        <div className="container-prose relative py-24 md:py-32">
+          <div className="text-[11px] uppercase tracking-[0.35em] text-[color:var(--gold)]">
             İletişim
           </div>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl text-[color:var(--navy-deep)] sm:text-6xl">
+          <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.15] text-white sm:text-5xl md:text-6xl">
             Ön görüşme talep edin
           </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
             Tüm görüşmeler avukatlık meslek kurallarına uygun olarak gizlilik içinde yürütülür.
           </p>
         </div>
