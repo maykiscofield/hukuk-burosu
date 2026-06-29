@@ -20,7 +20,7 @@ export function SiteHeader() {
             Cüneyt Kocamanoğlu
           </span>
           <span className="hidden text-[10px] uppercase tracking-[0.3em] text-white/40 sm:inline">
-            Hukuk Bürosu
+            Avukatlık Bürosu
           </span>
         </Link>
 

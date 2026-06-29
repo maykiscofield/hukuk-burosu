@@ -4,23 +4,23 @@ import { ArrowRight, Scale, ShieldCheck, Gavel, Building2, CheckCircle2 } from "
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Avukat Cüneyt Kocamanoğlu | İstanbul Hukuk Bürosu" },
+      { title: "Avukat Cüneyt Kocamanoğlu | İstanbul Avukatlık Bürosu" },
       {
         name: "description",
         content:
-          "Avukat Cüneyt Kocamanoğlu — İstanbul Küçükçekmece merkezli hukuk bürosu. Ceza, ticaret, aile ve gayrimenkul hukukunda 9 yılı aşkın deneyim. Ön görüşme için iletişime geçin.",
+          "Avukat Cüneyt Kocamanoğlu — İstanbul Küçükçekmece merkezli avukatlık bürosu. Ceza, ticaret, aile ve gayrimenkul hukukunda 9 yılı aşkın deneyim. Ön görüşme için iletişime geçin.",
       },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "tr_TR" },
-      { property: "og:title", content: "Avukat Cüneyt Kocamanoğlu | İstanbul Hukuk Bürosu" },
+      { property: "og:title", content: "Avukat Cüneyt Kocamanoğlu | İstanbul Avukatlık Bürosu" },
       {
         property: "og:description",
         content:
           "Ceza, ticaret, aile ve gayrimenkul hukukunda uzman avukat. İstanbul Barosu kayıtlı. 9+ yıl deneyim, 100+ başarıyla sonuçlanan dava.",
       },
       { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/" },
-      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Avukatlık Bürosu" },
       { tagName: "link", rel: "canonical", href: "https://cuneytkocamanoglu.av.tr/" },
     ],
   }),
@@ -97,7 +97,7 @@ function HomePage() {
           <div className="max-w-3xl">
             <div className="mb-7 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[color:var(--gold-soft)]">
               <span className="h-px w-10 bg-[color:var(--gold)]" />
-              Hukuk Bürosu — İstanbul
+              Avukatlık Bürosu — İstanbul
             </div>
 
             <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">

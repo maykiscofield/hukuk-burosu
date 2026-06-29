@@ -10,7 +10,7 @@ export function SiteFooter() {
         <div>
           <div className="font-serif text-2xl text-primary-foreground">Cüneyt Kocamanoğlu</div>
           <div className="mt-1 text-[10px] uppercase tracking-[0.3em] text-[color:var(--gold-soft)]">
-            Hukuk Bürosu
+            Avukatlık Bürosu
           </div>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-primary-foreground/65">
             Köklü tecrübemiz ve modern hukuki yaklaşımımızla, müvekkillerimize
@@ -57,7 +57,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-primary-foreground/10">
         <div className="container-prose flex flex-col items-center justify-between gap-2 py-5 text-xs text-primary-foreground/55 sm:flex-row">
-          <span>© {new Date().getFullYear()} Cüneyt Kocamanoğlu Hukuk Bürosu. Tüm hakları saklıdır.</span>
+          <span>© {new Date().getFullYear()} Cüneyt Kocamanoğlu Avukatlık Bürosu. Tüm hakları saklıdır.</span>
           <span>Avukatlık Kanunu ve TBB meslek kuralları çerçevesinde hizmet verilmektedir.</span>
         </div>
       </div>

@@ -19,7 +19,7 @@ export const Route = createFileRoute("/hakkimizda")({
           "İstanbul Üniversitesi Hukuk Fakültesi mezunu, İstanbul Barosu üyesi Avukat Cüneyt Kocamanoğlu hakkında bilgi edinin.",
       },
       { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/hakkimizda" },
-      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Avukatlık Bürosu" },
       { tagName: "link", rel: "canonical", href: "https://cuneytkocamanoglu.av.tr/hakkimizda" },
     ],
   }),
@@ -77,7 +77,7 @@ function About() {
             <div className="absolute -inset-3 -z-10 border border-[color:var(--gold)]/40" />
             <img
               src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=80"
-              alt="Hukuk bürosu iç mekânı"
+              alt="Avukatlık bürosu iç mekânı"
               className="aspect-[4/5] w-full object-cover"
               loading="lazy"
             />
@@ -91,7 +91,7 @@ function About() {
 
             <div className="mt-8 space-y-5 text-[15px] leading-relaxed text-foreground/80">
               <p>
-                İstanbul merkezli kurulan Cüneyt Kocamanoğlu Hukuk Bürosu, hukuki
+                İstanbul merkezli kurulan Cüneyt Kocamanoğlu Avukatlık Bürosu, hukuki
                 danışmanlık ve dava takip hizmetlerini yenilikçi ve dinamik bir
                 yaklaşımla, kurumsal bir disiplin çerçevesinde sunmaktadır.
                 Akademik başarı ve güçlü bir vizyonla temelleri atılan büromuz, hem

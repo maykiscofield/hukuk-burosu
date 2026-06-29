@@ -29,7 +29,7 @@ export const Route = createFileRoute("/faaliyet-alanlari")({
           "Ceza, ticaret, aile, gayrimenkul, iş, idare ve miras hukuku alanlarında İstanbul'da uzman avukatlık hizmetleri.",
       },
       { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/faaliyet-alanlari" },
-      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Avukatlık Bürosu" },
       {
         tagName: "link",
         rel: "canonical",
@@ -114,7 +114,7 @@ function PracticeAreas() {
           </h1>
 
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-white/60">
-            Cüneyt Kocamanoğlu Hukuk Bürosu; özel hukuk ve kamu hukukunun pek çok
+            Cüneyt Kocamanoğlu Avukatlık Bürosu; özel hukuk ve kamu hukukunun pek çok
             dalında, müvekkillerine güvenilir ve sonuç odaklı danışmanlık sunar.
           </p>
 

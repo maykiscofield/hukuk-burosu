@@ -21,7 +21,7 @@ export const Route = createFileRoute("/iletisim")({
         content: "Ön görüşme randevusu alın. Küçükçekmece / İstanbul. Haftanın her günü 09:00-21:00.",
       },
       { property: "og:url", content: "https://cuneytkocamanoglu.av.tr/iletisim" },
-      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Hukuk Bürosu" },
+      { property: "og:site_name", content: "Cüneyt Kocamanoğlu Avukatlık Bürosu" },
       { tagName: "link", rel: "canonical", href: "https://cuneytkocamanoglu.av.tr/iletisim" },
     ],
   }),

@@ -70,9 +70,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "name": "Cüneyt Kocamanoğlu Hukuk Bürosu",
+  "name": "Cüneyt Kocamanoğlu Avukatlık Bürosu",
   "url": "https://cuneytkocamanoglu.av.tr",
-  "description": "İstanbul merkezli ceza, ticaret, aile ve gayrimenkul hukuku alanlarında uzman hukuk bürosu.",
+  "description": "İstanbul merkezli ceza, ticaret, aile ve gayrimenkul hukuku alanlarında uzman avukatlık bürosu.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Kartaltepe Mah. 1. Malazgirt Cad. No:2-4/1 Keleş Center B Blok 36",
