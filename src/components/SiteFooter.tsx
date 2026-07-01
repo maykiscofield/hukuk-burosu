@@ -8,10 +8,11 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-[color:var(--navy-deep)] text-primary-foreground/85">
       <div className="container-prose grid gap-10 py-16 md:grid-cols-3">
         <div>
-          <div className="font-serif text-2xl text-primary-foreground">Cüneyt Kocamanoğlu</div>
-          <div className="mt-1 text-[10px] uppercase tracking-[0.3em] text-[color:var(--gold-soft)]">
-            Avukatlık Bürosu
-          </div>
+          <img
+  src="/logo.png"
+  alt="Cüneyt Kocamanoğlu Avukatlık Bürosu"
+  className="h-14 w-auto"
+/>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-primary-foreground/65">
             Köklü tecrübemiz ve modern hukuki yaklaşımımızla, müvekkillerimize
             gizlilik ve dürüstlük ilkeleri çerçevesinde danışmanlık sunuyoruz.

@@ -161,6 +161,7 @@ function About() {
                   "İstanbul Üniversitesi Hukuk Fakültesi",
                   "İstanbul Barosu Üyesi",
                   "Onur Öğrencisi — 2017",
+                  "TÜRKAR (Türkiye Eğilim Araştırmaları) Danışma Kurulu Üyesi)" 
                 ].map((c) => (
                   <div key={c} className="flex items-center gap-2 text-[12px] text-foreground/60">
                     <span className="h-px w-4 bg-[color:var(--gold)]" />

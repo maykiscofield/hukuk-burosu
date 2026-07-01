@@ -15,14 +15,13 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[rgba(201,168,76,0.5)] bg-gradient-to-r from-[#0A1223] to-[#1a2a4a] backdrop-blur-md">
       <div className="container-prose flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="font-serif text-2xl tracking-tight text-white">
-            Cüneyt Kocamanoğlu
-          </span>
-          <span className="hidden text-[10px] uppercase tracking-[0.3em] text-white/40 sm:inline">
-            Avukatlık Bürosu
-          </span>
-        </Link>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+  <img
+    src="/logo.png"
+    alt="Cüneyt Kocamanoğlu Avukatlık Bürosu"
+    className="h-16 w-auto"
+  />
+</Link>
 
         <nav className="hidden items-center gap-9 md:flex">
           {nav.map((item) => (
