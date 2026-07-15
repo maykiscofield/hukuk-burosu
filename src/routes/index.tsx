@@ -101,15 +101,17 @@ function HomePage() {
             </div>
 
             <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">
-              Avukat Cüneyt Kocamanoğlu
-              <br />
-              <span className="italic text-[color:var(--gold-soft)]">Hukuk & Danışmanlık</span>
-            </h1>
+  Avukat Cüneyt Kocamanoğlu
+  <br />
+  <span className="inline-block ml-[2ch] italic text-[color:var(--gold-soft)]">
+    Hukuk & Danışmanlık
+  </span>
+</h1>
 
-            <p className="mt-7 max-w-xl text-[15px] leading-relaxed text-primary-foreground/70 sm:text-base">
-              Ticaret ve ceza hukukunun en zorlu davalarında; stratejik savunma,
-              sonuç odaklı danışmanlık. 9 yılı aşkın deneyim, onlarca emsal kararla.
-            </p>
+<p className="mt-7 max-w-xl text-[15px] leading-relaxed text-primary-foreground/70 sm:text-base">
+  Ticaret ve ceza hukukunun en zorlu davalarında; stratejik savunma,
+  sonuç odaklı danışmanlık. 9 yılı aşkın deneyim, onlarca emsal kararla.
+</p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
@@ -148,7 +150,7 @@ function HomePage() {
           <div className="container-prose grid grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
             {[
               { value: "9+", label: "Yıllık Deneyim" },
-              { value: "100+", label: "Başarıyla Sonuçlanan Dava" },
+              { value: "100+", label: "Dava Dosyası" },
               { value: "7+", label: "Temel Uzmanlık Alanı" },
               { value: "700+", label: "Müvekkil" },
             ].map((stat) => (

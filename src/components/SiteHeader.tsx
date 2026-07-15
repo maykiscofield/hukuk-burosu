@@ -15,13 +15,24 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[rgba(201,168,76,0.5)] bg-gradient-to-r from-[#0A1223] to-[#1a2a4a] backdrop-blur-md">
       <div className="container-prose flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
-  <img
-    src="/logo.png"
-    alt="Cüneyt Kocamanoğlu Avukatlık Bürosu"
-    className="h-16 w-auto"
-  />
-</Link>
+        
+        {/* LOGO VE YAZI ALANI - METALİK EFEKT İLE GÜNCELLENDİ */}
+        + <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
+          <img
+            src="/logo.png"
+            alt="Av. CK Logo"
+            className="h-12 w-auto object-contain"
+          />
+           <div className="h-15  w-px bg-[color:var(--gold)]/100" aria-hidden="true" />
+          <div className="flex flex-col">
+            <span className="text-sm md:text-base font-semibold tracking-wider uppercase leading-tight bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
+              Cüneyt Kocamanoğlu
+            </span>
+            <span className="text-[10px] md:text-xs font-light tracking-[0.2em] uppercase leading-tight mt-0.5 text-center bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
+              Avukatlık Bürosu
+            </span>
+          </div>
+        </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
           {nav.map((item) => (

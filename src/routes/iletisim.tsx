@@ -84,7 +84,7 @@ function Contact() {
 
             <InfoRow icon={Clock} title="Çalışma Saatleri">
               <span className="block">Haftanın her günü</span>
-              <span className="block">· 09:00 — 21:00</span>
+              <span className="block">09:00 — 21:00</span>
             </InfoRow>
 
             <div className="space-y-3 pt-2">
