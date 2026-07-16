@@ -17,18 +17,18 @@ export function SiteHeader() {
       <div className="container-prose flex h-20 items-center justify-between">
         
         {/* LOGO VE YAZI ALANI - METALİK EFEKT İLE GÜNCELLENDİ */}
-        + <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
           <img
             src="/logo.png"
             alt="Av. CK Logo"
             className="h-12 w-auto object-contain"
           />
-           <div className="h-15 w-px bg-[color:var(--gold)]/100" aria-hidden="true" />
+          <div className="h-15 w-px bg-[color:var(--gold)]/100" aria-hidden="true" />
           <div className="flex flex-col">
             <span className="text-sm md:text-base font-semibold tracking-wider uppercase leading-tight bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
               Cüneyt Kocamanoğlu
             </span>
-            <span className="text-[10px] md:text-xs font-light tracking-[0.2em] uppercase leading-tight mt-0.5 text-center bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
+            <span className="text-[10px] md:text-xs font-light tracking-[0.2em] uppercase leading-tight mt-0.5 md:text-center bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
               Avukatlık Bürosu
             </span>
           </div>
