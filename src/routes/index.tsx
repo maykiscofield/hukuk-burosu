@@ -88,7 +88,7 @@ function HomePage() {
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "repeating-linear-gradient(135deg, #c9a84c 0px, #c9a84c 1px, transparent 1px, transparent 60px)",
+              "repeating-linear-gradient(135deg, #2DD4BF 0px, #2DD4BF 1px, transparent 1px, transparent 60px)",
           }}
           aria-hidden
         />

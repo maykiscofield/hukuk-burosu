@@ -13,22 +13,22 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-[rgba(201,168,76,0.5)] bg-gradient-to-r from-[#0A1223] to-[#1a2a4a] backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-[rgba(45,212,191,0.5)] bg-gradient-to-r from-[#0B2B2E] to-[#123D3D] backdrop-blur-md">
       <div className="container-prose flex h-20 items-center justify-between">
         
-        {/* LOGO VE YAZI ALANI - METALİK EFEKT İLE GÜNCELLENDİ */}
-        + <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
+        {/* LOGO VE YAZI ALANI - TURKUAZ TEMA */}
+        <Link to="/" className="flex items-center gap-4" onClick={() => setOpen(false)}>
           <img
             src="/logo.png"
             alt="Av. CK Logo"
             className="h-12 w-auto object-contain"
           />
-           <div className="h-15  w-px bg-[color:var(--gold)]/100" aria-hidden="true" />
+          <span aria-hidden="true" className="h-8 w-px bg-[rgba(45,212,191,0.5)]" />
           <div className="flex flex-col">
-            <span className="text-sm md:text-base font-semibold tracking-wider uppercase leading-tight bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
+            <span className="text-sm md:text-base font-semibold tracking-wider uppercase leading-tight bg-gradient-to-b from-[#5EEAD4] to-[#0D9488] bg-clip-text text-transparent">
               Cüneyt Kocamanoğlu
             </span>
-            <span className="text-[10px] md:text-xs font-light tracking-[0.2em] uppercase leading-tight mt-0.5 text-center bg-gradient-to-b from-[#f5d98a] to-[#a87c32] bg-clip-text text-transparent">
+            <span className="text-[10px] md:text-xs font-light tracking-[0.2em] uppercase leading-tight mt-0.5 text-center bg-gradient-to-b from-[#5EEAD4] to-[#0D9488] bg-clip-text text-transparent">
               Avukatlık Bürosu
             </span>
           </div>
@@ -68,7 +68,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div id="mobile-nav" className="border-t border-[rgba(201,168,76,0.5)] bg-[#0A1223] md:hidden">
+        <div id="mobile-nav" className="border-t border-[rgba(45,212,191,0.5)] bg-[#0B2B2E] md:hidden">
           <div className="container-prose flex flex-col py-4">
             {nav.map((item) => (
               <Link
