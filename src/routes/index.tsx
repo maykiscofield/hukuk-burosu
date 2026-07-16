@@ -88,7 +88,7 @@ function HomePage() {
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "repeating-linear-gradient(135deg, #2DD4BF 0px, #2DD4BF 1px, transparent 1px, transparent 60px)",
+              "repeating-linear-gradient(135deg, #c9a84c 0px, #c9a84c 1px, transparent 1px, transparent 60px)",
           }}
           aria-hidden
         />
@@ -103,7 +103,7 @@ function HomePage() {
             <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">
   Avukat Cüneyt Kocamanoğlu
   <br />
-  <span className="inline-block ml-[2ch] italic text-[color:var(--gold-soft)]">
+  <span className="inline-block ml-[1ch] italic text-[color:var(--gold-soft)]">
     Hukuk & Danışmanlık
   </span>
 </h1>
