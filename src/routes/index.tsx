@@ -95,9 +95,9 @@ function HomePage() {
 
         <div className="container-prose relative z-10 flex min-h-[82vh] flex-col justify-center py-28">
           <div className="max-w-3xl">
-            <div className="mb-7 flex items-center gap-3 text-[11px] uppercase tracking-[0.35em] text-[color:var(--gold-soft)]">
-              <span className="h-px w-10 bg-[color:var(--gold)]" />
-              Avukatlık Bürosu — İstanbul
+            <div className="mb-7 flex items-center gap-3 text-[10px] tracking-[0.2em] uppercase text-[color:var(--gold-soft)] sm:text-[11px] sm:tracking-[0.35em]">
+              <span className="h-px w-10 shrink-0 bg-[color:var(--gold)]" />
+              <span className="whitespace-nowrap">Avukatlık Bürosu — İstanbul</span>
             </div>
 
             <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">
