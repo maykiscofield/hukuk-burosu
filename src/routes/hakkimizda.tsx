@@ -53,11 +53,12 @@ function About() {
             hukuki danışmanlıktan dava takibine kadar her aşamada yanınızdayız.
           </p>
 
-          <div className="mt-14 grid grid-cols-3 gap-0 divide-x divide-white/10 border border-white/10 md:max-w-xl">
+          <div className="mt-14 grid grid-cols-2 gap-0 divide-x divide-y divide-white/10 border border-white/10 md:max-w-2xl md:grid-cols-4 md:divide-y-0">
             {[
               { value: "9+", label: "Yıllık Deneyim" },
               { value: "TBB", label: "Türkiye Barolar Birliği" },
               { value: "Baro", label: "İstanbul Barosu" },
+              { value: "TÜRKAR", label: "Danışma Kurulu Üyesi" },
             ].map((stat) => (
               <div key={stat.label} className="px-6 py-5">
                 <div className="font-serif text-2xl text-[color:var(--gold)]">{stat.value}</div>
@@ -150,9 +151,9 @@ function About() {
               <div className="relative">
                 <div className="absolute -inset-2 -z-10 border border-[color:var(--gold)]/40" />
                 <img
-                  src="/cuneyt-photo.webp"
+                  src="/cuneyt-photo2.webp"
                   alt="Av. Cüneyt Kocamanoğlu portresi"
-                  className="aspect-[3/4] w-full object-cover grayscale-[75%]"
+                  className="aspect-[3/4] w-full object-cover grayscale-[50%]"
                   loading="lazy"
                 />
               </div>
@@ -161,7 +162,7 @@ function About() {
                   "İstanbul Üniversitesi Hukuk Fakültesi",
                   "İstanbul Barosu Üyesi",
                   "Onur Öğrencisi — 2017",
-                  "TÜRKAR (Türkiye Eğilim Araştırmaları) Danışma Kurulu Üyesi)" 
+                  "TÜRKAR (Türkiye Eğilim Araştırmaları) Danışma Kurulu Üyesi"
                 ].map((c) => (
                   <div key={c} className="flex items-center gap-2 text-[12px] text-foreground/60">
                     <span className="h-px w-4 bg-[color:var(--gold)]" />

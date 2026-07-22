@@ -100,9 +100,11 @@ function HomePage() {
               <span className="whitespace-nowrap">Avukatlık Bürosu — İstanbul</span>
             </div>
 
-            <h1 className="font-serif text-5xl leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-[4.25rem]">
-  Avukat Cüneyt Kocamanoğlu
-  <br />
+            <h1 className="font-serif leading-[1.1] tracking-tight text-primary-foreground">
+   <span className="text-[clamp(1.375rem,6vw,1.875rem)] sm:text-6xl md:text-[4.25rem] whitespace-nowrap">
+     Avukat Cüneyt Kocamanoğlu
+   </span>
+   <br />
   <span className="inline-block ml-0 sm:ml-[1ch] italic text-2xl sm:text-4xl md:text-[4.25rem] text-[color:var(--gold-soft)]">
     Hukuk & Danışmanlık
   </span>

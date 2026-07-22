@@ -30,7 +30,7 @@ const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=Kartaltepe+Mah.+1.+Malazgirt+Cad.+No%3A2-4%2F1+Kele%C5%9F+Center+B+Blok+36+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece+%C4%B0stanbul";
 
 const MAPS_EMBED =
-  "https://maps.google.com/maps?q=Kartaltepe+Mah.+1.+Malazgirt+Cad.+No:2-4/1+Kele%C5%9F+Center+B+Blok+36+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece+%C4%B0stanbul&output=embed";
+  "https://maps.google.com/maps?q=C%C3%BCneyt+Kocamano%C4%9Flu+Avukatl%C4%B1k+B%C3%BCrosu%2C+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2C+%C4%B0stanbul&output=embed";
 
 function Contact() {
   return (
