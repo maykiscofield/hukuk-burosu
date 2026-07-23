@@ -87,7 +87,7 @@ function Contact() {
               <span className="block">09:00 — 21:00</span>
             </InfoRow>
 
-            <div className="space-y-3 pt-2">
+            <div id="hemen-iletisime-gecin" className="space-y-3 pt-2 scroll-mt-24">
               <div className="text-[11px] uppercase tracking-[0.25em] text-[color:var(--gold)]">
                 Hemen İletişime Geçin
               </div>

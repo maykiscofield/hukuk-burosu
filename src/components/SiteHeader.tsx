@@ -50,6 +50,7 @@ export function SiteHeader() {
           ))}
           <Link
             to="/iletisim"
+            hash="hemen-iletisime-gecin"
             className="bg-[color:var(--gold)] px-5 py-2.5 text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--navy-deep)] transition-colors hover:bg-[color:var(--gold-soft)]"
           >
             Randevu Al
@@ -84,6 +85,7 @@ export function SiteHeader() {
             ))}
             <Link
               to="/iletisim"
+              hash="hemen-iletisime-gecin"
               onClick={() => setOpen(false)}
               className="mt-3 bg-[color:var(--gold)] py-3 text-center text-xs font-medium uppercase tracking-[0.2em] text-[color:var(--navy-deep)] transition-colors hover:bg-[color:var(--gold-soft)]"
             >
