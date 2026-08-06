@@ -18,6 +18,13 @@ declare module "@tanstack/react-router" {
   }
 }
 
+// Yeni bir deploy sonrasında eski sekmede kalan kod, artık sunucuda
+// bulunmayan eski hash'li JS dosyalarını çekmeye çalışırsa (örn. "Failed to
+// fetch dynamically imported module" hatası), sayfayı otomatik yeniler.
+window.addEventListener("vite:preloadError", () => {
+  window.location.reload();
+});
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Outlet,
   Link,
@@ -33,9 +34,34 @@ function NotFoundComponent() {
   );
 }
 
+// Yeni bir deploy sonrasında eski sekmede kalan kod, artık sunucuda olmayan
+// eski hash'li JS dosyalarını çekmeye çalışırsa bu tip bir hata oluşur.
+const CHUNK_LOAD_ERROR_PATTERN =
+  /Failed to fetch dynamically imported module|error loading dynamically imported module|Importing a module script failed/i;
+const CHUNK_RELOAD_FLAG = "ck-chunk-reload-attempted";
+
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
+
+  const isChunkLoadError = CHUNK_LOAD_ERROR_PATTERN.test(error?.message ?? "");
+  const alreadyTriedReload =
+    typeof window !== "undefined" &&
+    sessionStorage.getItem(CHUNK_RELOAD_FLAG) === "1";
+
+  useEffect(() => {
+    if (!isChunkLoadError || alreadyTriedReload) return;
+    sessionStorage.setItem(CHUNK_RELOAD_FLAG, "1");
+    window.location.reload();
+  }, [isChunkLoadError, alreadyTriedReload]);
+
+  // Sayfa birazdan otomatik yenilenecek; kullanıcıya boşuna hata ekranı
+  // göstermeye gerek yok. Yenileme sorunu çözmezse (gerçek bir hata varsa)
+  // alreadyTriedReload true olur ve normal hata ekranı gösterilir.
+  if (isChunkLoadError && !alreadyTriedReload) {
+    return null;
+  }
+
   return (
     <div className="flex min-h-[70vh] items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
